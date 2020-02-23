@@ -1,30 +1,35 @@
-<!DOCTYPE html>
-	<html>
+<!doctype html>
+<html>
 	<head>
 	</head>
 	<body>
 		<p>There is a number between 000-999</p>
-		<p id ="attempts">number of attempts left:</p>
-		<span>Enter a Guess:</span>
-		<div>
-			<img src="images/button-up.gif" id="up-100s" width="100"/>
-			<img src="images/button-up.gif" id="up-10s" width="100"/>
-			<img src="images/button-up.gif" id="up-1s" width="100"/>
-		</div>
-		<div>
-			<input type="number" min="0" max="9" value="0" id="digits-100s">
-			<input type="number" min="0" max="9" value="0" id="digits-10s">
-			<input type="number" min="0" max="9" value="0" id="digits-1s">
-		</div>
-		<div>
-			<img src="images/button-down.gif" id="down-100s" width="100"/>
-			<img src="images/button-down.gif" id="down-10s" width="100"/>
-			<img src="images/button-down.gif" id="down-1s" width="100"/>
-		</div>
-		<input type="text" id="guess-text">
-		<input type="button" id="guess-button" value="Submit">
+		<p id = "attempts">you have 10 guesses</p>
+		<span>Enter a guess: </span>
+	<div>
+		<img src="images/button-up.gif" id="up-100s" width="100"/>
+		<img src="images/button-up.gif" id="up-10s"  width="100"/>
+		<img src="images/button-up.gif" id="up-1s"   width="100"/>
+	</div>
+	<div>
+		<img src="images/0.png" id="digits-100s" width="100"/>
+		<img src="images/0.png" id="digits-10s"  width="100"/>
+		<img src="images/0.png" id="digits-1s"   width="100"/>
+	</div>
+	<div>
+		<img src="images/button-down.gif" id="down-100s" width="100"/>
+		<img src="images/button-down.gif" id="down-10s"  width="100"/>
+		<img src="images/button-down.gif" id="down-1s"   width="100"/>
+	</div>
 
-		<ul id="clue"></ul>
-		<script src="game.js"></script>
-	</body>	
+	<div>
+		<img src="images/button-enter.png" id="guess-button" width = "300">
+	</div>
+
+
+		<script src="scripts/Guess.js"></script>
+		<script src="scripts/views.js"></script>
+		<script src="scripts/model.js"></script>
+		<script src="scripts/controllers.js"></script>
+	</body>
 </html>

@@ -1,26 +1,25 @@
-let passcode = Math.floor(Math.random() *1000);
+let passcode = Math.floor(Math.random()*1000);
 let tries = 10;
 let guess = new Guess();
 
 function guessNumber(guess){
-tries--;
-	if(guess == passcode){
-		printGameOver('WIN');
+	tries--;
+	if (guess == passcode){
+	printGameOver('WIN');
 	}
 	else if(tries <= 0){
-		printGameOver("LOSE");
+		printGameOver('LOSE')
 	}
-	else
-		printAttemptsRemaining(tries);
-		giveClue(guess);
+	else{
+	 printAttemptsRemaining(tries);
+	 giveClue(guess);
 	}
-
-
+}
 function giveClue(guess){
-		if(guess > passcode){
-			printClue('HI',guess);
-		}
-		else{
-			printClue("LOW",guess)
-		}
+	if(guess > passcode){
+		printClue('HI',guess);
 	}
+	if(guess < passcode){
+		printClue('LOW',guess);
+	}
+}
